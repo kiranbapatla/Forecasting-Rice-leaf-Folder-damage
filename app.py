@@ -4,7 +4,7 @@ import joblib
 from tensorflow.keras.models import load_model
 
 # Load saved files
-model = load_model("leaf_folder_model.keras")
+model = load_model("leaf_folder_model.h5",, compile=False)
 scaler = joblib.load("scaler.pkl")
 
 st.title("Rice Leaf Folder Forecasting System")
